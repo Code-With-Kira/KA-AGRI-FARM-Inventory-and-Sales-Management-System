@@ -20,9 +20,11 @@ A farm inventory and sales management system prototype developed using Figma and
 2. Open the project folder
 3. Copy the Figma Prototype Link in browser
 4. Run the prototype
-##Figma Prototype Link:
+5. 
+## Figma Prototype Link:
 https://www.figma.com/proto/THr2gkU4zKQ4R29saKxU45/KA-AGRI-FARM-PROTOTYPE?node-id=0-1&t=PYkq7K7Ttm8e5ykY-1
-##Team Members
+
+## Team Members
 - Laurence Paul Jigger R. Egay
 - Andrea Glecy A. Semine
 - Ashley Queen Buba
