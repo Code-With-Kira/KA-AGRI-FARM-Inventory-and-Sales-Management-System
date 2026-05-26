@@ -1,13 +1,20 @@
-###### KA-AGRI-FARM-Inventory-and-Sales-Management-System
-##Description: 
-  A farm inventory and sales management system designed to manage products, 
-monitor inventory stock, record sales transactions, and generate reports.
+# KA-AGRI FARM Inventory and Sales Management System
 
-##Setup Instructions:
-1. Clone the repository
+## Description
+A farm inventory and sales management system prototype developed using Figma and exported into HTML/CSS code. The system manages products, inventory, sales, and reports.
+
+## Features
+- Login and Registration
+- Dashboard
+- Product Management
+- Inventory Monitoring
+- Sales Management
+- Reports
+
+## Setup Instructions
+1. Download the repository
 2. Open the project folder
-3. Install dependencies
-4. Run the application
+3. Run index.html in browser
 
 ##Team Members
 - Laurence Paul Jigger R. Egay
