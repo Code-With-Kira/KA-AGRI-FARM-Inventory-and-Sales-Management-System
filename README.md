@@ -15,7 +15,12 @@ A farm inventory and sales management system prototype developed using Figma and
 1. Download the repository
 2. Open the project folder
 3. Run index.html in browser
-
+## Optional
+1. Download the repository
+2. Open the project folder
+3. Copy the Figma Prototype Link in browser
+4. Run the prototype
+   
 ##Team Members
 - Laurence Paul Jigger R. Egay
 - Andrea Glecy A. Semine
