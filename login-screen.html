@@ -73,3 +73,166 @@
 
 </div>
 <!-- End of login error modal -->
+<!-- ============================================================
+     COMPONENT: Dashboard Summary Cards
+     PURPOSE: Displays four key metrics at the top of the
+              Dashboard — Total Products, Total Sales,
+              Available Stock, and Low Stock Alerts
+     ============================================================ -->
+
+<!-- Summary cards row: 1100px wide, holds all 4 metric cards -->
+<div style="position: absolute; top: 99px; left: 10px; width: 1100px; height: 176px;background-color: undefined;">
+
+  <!-- Card 1: Total Products count -->
+  <div style="position: absolute; top: 0px; left: 1px; width: 250px; height: 176px;background-color: #ffffff;">
+    <!-- Green icon background for visual indicator -->
+    <div style="position: absolute; top: 24px; left: 24px; width: 48px; height: 48px;background-color: #4caf50;">
+      <!-- Product icon image loaded from asset -->
+      <div style="position: absolute; top: 9px; left: 9px; width: 30px; height: 30px; background-image: url('getBytesAsync'); background-size: cover;"></div>
+    </div>
+    <!-- Displays the total product count: 20 -->
+    <div style="position: absolute; top: 88px; left: 24px; color: #111827;">20</div>
+    <!-- Card label in gray -->
+    <div style="position: absolute; top: 133px; left: 24px; color: #6b7280;">Total Products</div>
+  </div>
+
+  <!-- Card 2: Total Sales amount in Philippine Peso -->
+  <div style="position: absolute; top: 0px; left: 284px; width: 250px; height: 176px;background-color: #ffffff;">
+    <div style="position: absolute; top: 24px; left: 24px; width: 48px; height: 48px;background-color: #4caf50;">
+      <div style="position: absolute; top: 9px; left: 9px; width: 30px; height: 30px; background-image: url('getBytesAsync'); background-size: cover;"></div>
+    </div>
+    <!-- Total sales value displayed with peso sign -->
+    <div style="position: absolute; top: 88px; left: 24px; color: #111827;">₱9880</div>
+    <div style="position: absolute; top: 133px; left: 24px; color: #6b7280;">Total Sales</div>
+  </div>
+
+  <!-- Card 3: Available Stock quantity across all products -->
+  <div style="position: absolute; top: 0px; left: 567px; width: 250px; height: 176px;background-color: #ffffff;">
+    <div style="position: absolute; top: 24px; left: 24px; width: 48px; height: 48px;background-color: #4caf50;">
+      <div style="position: absolute; top: 9px; left: 9px; width: 30px; height: 30px; background-image: url('getBytesAsync'); background-size: cover;"></div>
+    </div>
+    <!-- Total available stock count -->
+    <div style="position: absolute; top: 88px; left: 24px; color: #111827;">1675</div>
+    <div style="position: absolute; top: 133px; left: 24px; color: #6b7280;">Available Stock</div>
+  </div>
+
+  <!-- Card 4: Low Stock Alert counter — products needing restocking -->
+  <div style="position: absolute; top: 0px; left: 850px; width: 250px; height: 176px;background-color: #ffffff;">
+    <div style="position: absolute; top: 24px; left: 24px; width: 48px; height: 48px;background-color: #4caf50;">
+      <div style="position: absolute; top: 9px; left: 9px; width: 30px; height: 30px; background-image: url('getBytesAsync'); background-size: cover;"></div>
+    </div>
+    <!-- Number of products currently below minimum stock level -->
+    <div style="position: absolute; top: 88px; left: 24px; color: #111827;">12</div>
+    <div style="position: absolute; top: 133px; left: 24px; color: #6b7280;">Low Stock Alert</div>
+  </div>
+
+</div>
+<!-- End of dashboard summary cards -->
+
+<!-- ============================================================
+     COMPONENT: Sales Management Table
+     PURPOSE: Displays recorded sales transactions with columns
+              for Sales ID, Product Name, Quantity Sold,
+              Sold Date, and Total Sold (₱)
+     ============================================================ -->
+
+<!-- Table header row: green text labels on light gray background -->
+<div style="position: absolute; top: 99px; left: 10px; width: 1100px; height: 56px;background-color: #f3f4f6;">
+  <div style="position: absolute; top: 18px; left: 20px; color: #2f6b3a;">Sales ID</div>          <!-- Column: unique sale identifier -->
+  <div style="position: absolute; top: 18px; left: 180px; color: #2f6b3a;">Product Name</div>     <!-- Column: name of the product sold -->
+  <div style="position: absolute; top: 18px; left: 500px; color: #2f6b3a;">Quantity Sold</div>    <!-- Column: number of units sold -->
+  <div style="position: absolute; top: 18px; left: 720px; color: #2f6b3a;">Sold Date</div>        <!-- Column: date the sale was made -->
+  <div style="position: absolute; top: 18px; left: 940px; color: #2f6b3a;">Total Sold (₱)</div>  <!-- Column: total peso amount of the sale -->
+</div>
+
+<!-- Sale record row 1: Batong — 50 units sold on 2026-05-09 -->
+<div style="position: absolute; top: 155px; left: 10px; width: 1100px; height: 56px;background-color: #ffffff;">
+  <div style="position: absolute; top: 18px; left: 20px; color: #111827;">S005</div>              <!-- Sale ID for this transaction -->
+  <div style="position: absolute; top: 18px; left: 180px; color: #111827;">Batong</div>           <!-- Product name -->
+  <div style="position: absolute; top: 18px; left: 500px; color: #111827;">50</div>               <!-- Quantity sold in this transaction -->
+  <div style="position: absolute; top: 18px; left: 720px; color: #111827;">"2026-05-09"</div>    <!-- Date the sale was recorded -->
+  <div style="position: absolute; top: 18px; left: 940px; color: #111827;">2500</div>             <!-- Total amount: 50 x ₱50/kg = ₱2500 -->
+</div>
+
+<!-- Sale record row 2: Yellow Sweet Corn — 25 units sold -->
+<div style="position: absolute; top: 211px; left: 10px; width: 1100px; height: 56px;background-color: #ffffff;">
+  <div style="position: absolute; top: 18px; left: 20px; color: #111827;">S004</div>
+  <div style="position: absolute; top: 18px; left: 180px; color: #111827;">Yellow Sweet Corn</div>
+  <div style="position: absolute; top: 18px; left: 500px; color: #111827;">25</div>
+  <div style="position: absolute; top: 18px; left: 720px; color: #111827;">"2026-05-09"</div>
+  <div style="position: absolute; top: 18px; left: 940px; color: #111827;">1500</div>             <!-- Total: 25 x ₱60/kg = ₱1500 -->
+</div>
+
+<!-- Sale record row 3: Lettuce — 100 units sold -->
+<div style="position: absolute; top: 267px; left: 10px; width: 1100px; height: 56px;background-color: #ffffff;">
+  <div style="position: absolute; top: 18px; left: 20px; color: #111827;">S003</div>
+  <div style="position: absolute; top: 18px; left: 180px; color: #111827;">Lettuce</div>
+  <div style="position: absolute; top: 18px; left: 500px; color: #111827;">100</div>
+  <div style="position: absolute; top: 18px; left: 720px; color: #111827;">"2026-05-09"</div>
+  <div style="position: absolute; top: 18px; left: 940px; color: #111827;">4500</div>             <!-- Total: 100 x ₱45/pc = ₱4500 -->
+</div>
+
+<!-- "New Sale" action button: opens modal to record a new sale transaction -->
+<div style="position: absolute; top: 20px; left: 940px; width: 160px; height: 44px;background-color: #2f6b3a;">
+  <!-- Plus icon for adding new record -->
+  <div style="position: absolute; top: 14px; left: 20px; width: 16px; height: 16px; background-image: url('getBytesAsync'); background-size: cover;"></div>
+  <!-- Button label in white text -->
+  <div style="position: absolute; top: 11px; left: 54px; color: #ffffff;">New Sale</div>
+</div>
+<!-- End of sales table -->
+
+<!-- ============================================================
+     COMPONENT: Record New Sale Modal
+     PURPOSE: Pop-up form that allows staff to record a new
+              sales transaction by selecting a product,
+              entering quantity, and confirming the total amount
+     ============================================================ -->
+
+<!-- Modal container: white card positioned over the sales screen -->
+<div style="position: absolute; top: -1441px; left: -1042px; width: 436px; height: 435px;background-color: #ffffff;">
+
+  <!-- Modal header section -->
+  <div style="position: absolute; top: 0px; left: 0px; width: 436px; height: 76px;background-color: undefined;">
+    <!-- Modal title label -->
+    <div style="position: absolute; top: 30px; left: 24px; color: #111827;">Record New Sale</div>
+    <!-- Close (X) button icon to dismiss the modal -->
+    <div style="position: absolute; top: 32px; left: 392px; width: 20px; height: 20px; background-image: url('getBytesAsync'); background-size: cover;"></div>
+  </div>
+
+  <!-- Modal form body -->
+  <div style="position: absolute; top: 85px; left: 0px; width: 436px; height: 350px;background-color: undefined;">
+
+    <!-- Product Name dropdown label -->
+    <div style="position: absolute; top: 7px; left: 24px; color: #111827;">Product Name</div>
+    <!-- Placeholder text shown before user selects a product -->
+    <div style="position: absolute; top: -4px; left: 27px; color: #808080;">Select product</div>
+
+    <!-- Quantity input label -->
+    <div style="position: absolute; top: 100px; left: 24px; color: #111827;">Quantity   </div>
+    <!-- Default quantity placeholder value -->
+    <div style="position: absolute; top: -4px; left: 27px; color: #808080;">0</div>
+
+    <!-- Total Amount: auto-calculated based on product price x quantity -->
+    <div style="position: absolute; top: 193px; left: 24px; color: #111827;">Total Amount</div>
+    <!-- Default total placeholder before calculation -->
+    <div style="position: absolute; top: -4px; left: 27px; color: #808080;">0</div>
+
+    <!-- Modal action buttons row -->
+    <div style="position: absolute; top: 286px; left: 24px; width: 388px; height: 40px;background-color: undefined;">
+
+      <!-- Cancel button: closes modal without saving -->
+      <div style="position: absolute; top: 11px; left: 66px; color: #111827;">Cancel</div>
+
+      <!-- Record Sale button: submits the form and saves the transaction -->
+      <div style="position: absolute; top: 0px; left: 207px; width: 180px; height: 40px;background-color: undefined;">
+        <div style="position: absolute; top: 12px; left: 49px; color: #ffffff;">Record Sale</div>
+      </div>
+
+    </div>
+    <!-- End of modal action buttons -->
+
+  </div>
+  <!-- End of modal form body -->
+
+</div>
+<!-- End of Record New Sale modal -->
